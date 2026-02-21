@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            
+            font-family: "Roboto", sans-serif;
+            font-optical-sizing: auto;
+           
+        
+ 
+
+        }
+    </style>
+</head>
+<body class="bg-blue-200 min-h-screen">
+    <div class="max-w-[1140px] mx-auto mb-5">
+        <h1 class="text-3xl font-bold py-4">Job Application Tracker</h1>
+        <div class="flex gap-3 mx-auto justify-between mb-5">
+            <div class="w-[30%] bg-white rounded-[10px] mb-5 p-2">
+                <h3>Total</h3>
+                <p class="text-4xl">8</p>
+            </div>
+            <div class="w-[30%] bg-white rounded-[10px] mb-5 p-2">
+                <h3>Interview</h3>
+                <p class="text-4xl">0</p>
+            </div>
+            <div class="w-[30%] bg-white rounded-[10px] mb-5 p-2">
+                <h3>Rejected</h3>
+                <p class="text-4xl">0</p>
+            </div>
+        </div>
+    </div>
+    <section class="max-w-[1140px] mx-auto mb-5"> 
+        <div class="flex justify-between">
+            <h3>Available Jobs</h3>
+            <p> <span>8</span> jobs</p>
+        </div>
+       
+        <div class="mb-2 py-5">
+            <button class="bg-blue-300 text-white px-5 py-2 rounded-xl cursor-pointer" id="all-filter-btn">All</button>
+            <button class="bg-[#FFFFFF] px-5 py-2 rounded-xl cursor-pointer" id="interview-filter-btn">Interview</button>
+            <button class="bg-[#FFFFFF]  px-5 py-2 rounded-xl cursor-pointer" id="rejected-filter-btn">Rejected</button>
+        </div>
+        <div class="all-cards max-w-[1140px] mx-auto mb-5 space-y-5">
+            <div class="p-4 bg-white rounded-[5px] flex justify-between">
+                <div>
+                    <h2 class="font-bold text-1.5xl">Mobile First Corp</h2>
+                <h3 class="mb-2 text-[#64748B] text-sm">React Native Developer</h3>
+                <p class="text-sm mb-2 text-[#64748B]">Remote• Full-time •$130,000 - $175,000</p>
+                <button class="btn btn-outline bg-gray-200 mb-2">Not Applied</button>
+                <p class="mb-2 text-sm text-[#64748B]">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+                <button class="btn btn-outline btn-success text-green-300">Interview</button>
+                <button class="btn btn-outline btn-secondary text-red-600">Rejected</button>
+                </div>
+                 <div><button class="cursor-pointer"><i class="fa-solid fa-delete-left"></i></button></div>
+            </div>
+           <div class="p-4 bg-white rounded-[5px] flex justify-between">
+        <div>
+            <h2 class="font-bold text-1.5xl">TechWave Solutions</h2>
+            <h3 class="mb-2 text-[#64748B] text-sm">Frontend Engineer</h3>
+            <p class="text-sm mb-2 text-[#64748B]">Hybrid• Part-time •$90,000 - $120,000</p>
+            <button class="btn btn-outline bg-gray-200 mb-2">Applied</button>
+            <p class="mb-2 text-sm text-[#64748B]">Develop and maintain responsive web applications using modern frontend frameworks. Collaborate with UX/UI designers to enhance user experience.</p>
+            <button class="btn btn-outline btn-success text-green-300">Interview</button>
+            <button class="btn btn-outline btn-secondary text-red-600">Rejected</button>
+        </div>
+        <div><button class="cursor-pointer"><i class="fa-solid fa-delete-left"></i></button></div>
+        </div>
+        <div class="p-4 bg-white rounded-[5px] flex justify-between">
+    <div>
+        <h2 class="font-bold text-1.5xl">CloudNova Inc.</h2>
+        <h3 class="mb-2 text-[#64748B] text-sm">Backend Developer</h3>
+        <p class="text-sm mb-2 text-[#64748B]">On-site• Full-time •$110,000 - $145,000</p>
+        <button class="btn btn-outline bg-gray-200 mb-2">Applied</button>
+        <p class="mb-2 text-sm text-[#64748B]">Design and maintain scalable server-side applications. Ensure high performance and reliability of cloud-based solutions.</p>
+        <button class="btn btn-outline btn-success text-green-300">Interview</button>
+        <button class="btn btn-outline btn-secondary text-red-600">Rejected</button>
+    </div>
+    <div><button class="cursor-pointer"><i class="fa-solid fa-delete-left"></i></button></div>
+</div>
+            
+            
+        </div>
+        
+    </section>
+    
+
+</body>
+</html>
