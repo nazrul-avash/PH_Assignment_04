@@ -11,6 +11,8 @@ const allFilterBtn = document.getElementById("all-filter-btn");
 const interviewFilterBtn = document.getElementById("interview-filter-btn");
 const rejectedFilterBtn = document.getElementById("rejected-filter-btn");
 const mainContainer = document.querySelector("main");
+const btnDelete = document.getElementById("btn-delete");
+
 
 
 function  calculateCount() {
@@ -114,6 +116,7 @@ mainContainer.addEventListener("click",function(event){
         calculateCount();
    
     } 
+    
 });
 function renderInterviewList(){
     filteredSection.innerHTML = "";
@@ -134,6 +137,7 @@ function renderInterviewList(){
                     <div><button class="cursor-pointer"><i class="fa-solid fa-delete-left"></i></button></div>
         `;
         filteredSection.appendChild(jobCard);
+        infoTotal.innerText = `${interviewList.length} of ${allCardSection.children.length} jobs`;
 
 
     }
@@ -150,7 +154,7 @@ function renderRejectedList(){
                         <h2 class="font-bold text-1.5xl company-name">${rejected.companyName}</h2>
                         <h3 class="mb-2 text-[#64748B] text-sm designation">${rejected.designation}</h3>
                         <p class="text-sm mb-2 text-[#64748B] nature">${rejected.nature}</p> 
-                        <!-- <button class="btn btn-outline bg-gray-200 mb-2">Not Applied</button> -->
+                        <button class="btn btn-outline bg-gray-200 mb-2">Not Applied</button>
                         <p class="mb-2 text-sm text-[#64748B] desc">${rejected.desc}</p>
                         <button class="btn btn-outline btn-success text-green-300 btn-interview">Interview</button>
                         <button class="btn btn-outline btn-secondary text-red-600 btn-rejected">Rejected</button>
@@ -158,6 +162,7 @@ function renderRejectedList(){
                     <div><button class="cursor-pointer"><i class="fa-solid fa-delete-left"></i></button></div>
         `;
         filteredSection.appendChild(jobCard);
+        infoTotal.innerText = `${rejectedList.length} of ${allCardSection.children.length} jobs`;
 
 
     }
