@@ -48,7 +48,9 @@
             <button onclick="toggleStyle('rejected-filter-btn')" class="bg-[#FFFFFF]  px-5 py-2 rounded-xl cursor-pointer" id="rejected-filter-btn">Rejected</button>
         </div>
      <main>
-        <div class="filtered-view all-cards max-w-[100%] mx-auto py-5 space-y-5 hidden" id="filtered-section"></div>
+        <div class="filtered-view all-cards max-w-[100%] mx-auto py-5 space-y-5 hidden" id="filtered-section">
+            
+        </div>
            <div class="all-cards max-w-[100%] mx-auto py-5 space-y-5" id="all-card">
                 <div class="p-4 bg-white rounded-[5px] flex justify-between">
                     <div>
@@ -60,33 +62,98 @@
                         <button class="btn btn-outline btn-success text-green-300 btn-interview">Interview</button>
                         <button class="btn btn-outline btn-secondary text-red-600 btn-rejected">Rejected</button>
                     </div>
-                    <div><button class="cursor-pointer"><i class="fa-solid fa-delete-left"></i></button></div>
+                    <div><button class="cursor-pointer btn-delete"><i class="fa-solid fa-delete-left"></i></button></div>
                 </div>
-           <div class="p-4 bg-white rounded-[5px] flex justify-between">
-        <div>
-            <h2 class="font-bold text-1.5xl">TechWave Solutions</h2>
-            <h3 class="mb-2 text-[#64748B] text-sm">Frontend Engineer</h3>
-            <p class="text-sm mb-2 text-[#64748B]">Hybrid• Part-time •$90,000 - $120,000</p>
-            <button class="btn btn-outline bg-gray-200 mb-2">Applied</button>
-            <p class="mb-2 text-sm text-[#64748B]">Develop and maintain responsive web applications using modern frontend frameworks. Collaborate with UX/UI designers to enhance user experience.</p>
-            <button class="btn btn-outline btn-success text-green-300">Interview</button>
-            <button class="btn btn-outline btn-secondary text-red-600">Rejected</button>
-        </div>
-        <div><button class="cursor-pointer" id="btn-delete"><i class="fa-solid fa-delete-left"></i></button></div>
-        </div>
-
-        <div class="p-4 bg-white rounded-[5px] flex justify-between">
+              <div class="p-4 bg-white rounded-[5px] flex justify-between">
     <div>
-        <h2 class="font-bold text-1.5xl">CloudNova Inc.</h2>
-        <h3 class="mb-2 text-[#64748B] text-sm">Backend Developer</h3>
-        <p class="text-sm mb-2 text-[#64748B]">On-site• Full-time •$110,000 - $145,000</p>
-        <!-- <button class="btn btn-outline bg-gray-200 mb-2">Applied</button> -->
-        <p class="mb-2 text-sm text-[#64748B]">Design and maintain scalable server-side applications. Ensure high performance and reliability of cloud-based solutions.</p>
-        <button class="btn btn-outline btn-success text-green-300">Interview</button>
-        <button class="btn btn-outline btn-secondary text-red-600">Rejected</button>
+        <h2 class="font-bold text-1.5xl company-name">NextGen Solutions</h2>
+        <h3 class="mb-2 text-[#64748B] text-sm designation">Full Stack Engineer</h3>
+        <p class="text-sm mb-2 text-[#64748B] nature">Hybrid • Part-time • $90,000 - $120,000</p>
+        <p class="mb-2 text-sm text-[#64748B] desc">Develop and maintain web applications with a focus on scalable architecture and responsive design.</p>
+        <button class="btn btn-outline btn-success text-green-300 btn-interview">Interview</button>
+        <button class="btn btn-outline btn-secondary text-red-600 btn-rejected">Rejected</button>
     </div>
-    <div><button class="cursor-pointer"><i class="fa-solid fa-delete-left"></i></button></div>
+    <div><button class="cursor-pointer btn-delete"><i class="fa-solid fa-delete-left"></i></button></div>
 </div>
+<div class="p-4 bg-white rounded-[5px] flex justify-between">
+    <div>
+        <h2 class="font-bold text-1.5xl company-name">AlphaTech Labs</h2>
+        <h3 class="mb-2 text-[#64748B] text-sm designation">Backend Developer</h3>
+        <p class="text-sm mb-2 text-[#64748B] nature">On-site • Full-time • $100,000 - $140,000</p>
+        <p class="mb-2 text-sm text-[#64748B] desc">Design robust APIs and maintain server-side logic for high-traffic web applications.</p>
+        <button class="btn btn-outline btn-success text-green-300 btn-interview">Interview</button>
+        <button class="btn btn-outline btn-secondary text-red-600 btn-rejected">Rejected</button>
+    </div>
+    <div><button class="cursor-pointer btn-delete"><i class="fa-solid fa-delete-left"></i></button></div>
+</div>
+<div class="p-4 bg-white rounded-[5px] flex justify-between">
+    <div>
+        <h2 class="font-bold text-1.5xl company-name">CloudWave Inc.</h2>
+        <h3 class="mb-2 text-[#64748B] text-sm designation">UI/UX Designer</h3>
+        <p class="text-sm mb-2 text-[#64748B] nature">Remote • Contract • $70,000 - $90,000</p>
+        <p class="mb-2 text-sm text-[#64748B] desc">Create user-friendly interfaces and intuitive designs for mobile and web platforms.</p>
+        <button class="btn btn-outline btn-success text-green-300 btn-interview">Interview</button>
+        <button class="btn btn-outline btn-secondary text-red-600 btn-rejected">Rejected</button>
+    </div>
+    <div><button class="cursor-pointer btn-delete"><i class="fa-solid fa-delete-left"></i></button></div>
+</div>
+<div class="p-4 bg-white rounded-[5px] flex justify-between">
+    <div>
+        <h2 class="font-bold text-1.5xl company-name">QuantumSoft</h2>
+        <h3 class="mb-2 text-[#64748B] text-sm designation">DevOps Engineer</h3>
+        <p class="text-sm mb-2 text-[#64748B] nature">Hybrid • Full-time • $110,000 - $150,000</p>
+        <p class="mb-2 text-sm text-[#64748B] desc">Implement CI/CD pipelines, monitor systems, and optimize cloud infrastructure.</p>
+        <button class="btn btn-outline btn-success text-green-300 btn-interview">Interview</button>
+        <button class="btn btn-outline btn-secondary text-red-600 btn-rejected">Rejected</button>
+    </div>
+    <div><button class="cursor-pointer btn-delete"><i class="fa-solid fa-delete-left"></i></button></div>
+</div>
+<div class="p-4 bg-white rounded-[5px] flex justify-between">
+    <div>
+        <h2 class="font-bold text-1.5xl company-name">NextEra Solutions</h2>
+        <h3 class="mb-2 text-[#64748B] text-sm designation">Data Analyst</h3>
+        <p class="text-sm mb-2 text-[#64748B] nature">Remote • Part-time • $60,000 - $80,000</p>
+        <p class="mb-2 text-sm text-[#64748B] desc">Analyze large datasets to extract insights and support business decision-making.</p>
+        <button class="btn btn-outline btn-success text-green-300 btn-interview">Interview</button>
+        <button class="btn btn-outline btn-secondary text-red-600 btn-rejected">Rejected</button>
+    </div>
+    <div><button class="cursor-pointer btn-delete"><i class="fa-solid fa-delete-left"></i></button></div>
+</div>
+<div class="p-4 bg-white rounded-[5px] flex justify-between">
+    <div>
+        <h2 class="font-bold text-1.5xl company-name">Innovatech Global</h2>
+        <h3 class="mb-2 text-[#64748B] text-sm designation">Machine Learning Engineer</h3>
+        <p class="text-sm mb-2 text-[#64748B] nature">On-site • Full-time • $120,000 - $170,000</p>
+        <p class="mb-2 text-sm text-[#64748B] desc">Build and deploy machine learning models to solve real-world problems.</p>
+        <button class="btn btn-outline btn-success text-green-300 btn-interview">Interview</button>
+        <button class="btn btn-outline btn-secondary text-red-600 btn-rejected">Rejected</button>
+    </div>
+    <div><button class="cursor-pointer btn-delete"><i class="fa-solid fa-delete-left"></i></button></div>
+</div>
+<div class="p-4 bg-white rounded-[5px] flex justify-between">
+    <div>
+        <h2 class="font-bold text-1.5xl company-name">Skyline Ventures</h2>
+        <h3 class="mb-2 text-[#64748B] text-sm designation">Frontend Developer</h3>
+        <p class="text-sm mb-2 text-[#64748B] nature">Remote • Full-time • $95,000 - $130,000</p>
+        <p class="mb-2 text-sm text-[#64748B] desc">Build interactive web applications with modern JavaScript frameworks and reusable components.</p>
+        <button class="btn btn-outline btn-success text-green-300 btn-interview">Interview</button>
+        <button class="btn btn-outline btn-secondary text-red-600 btn-rejected">Rejected</button>
+    </div>
+    <div><button class="cursor-pointer btn-delete"><i class="fa-solid fa-delete-left"></i></button></div>
+</div>
+<div class="p-4 bg-white rounded-[5px] flex justify-between">
+    <div>
+        <h2 class="font-bold text-1.5xl company-name">AeroDynamics Co.</h2>
+        <h3 class="mb-2 text-[#64748B] text-sm designation">Embedded Systems Engineer</h3>
+        <p class="text-sm mb-2 text-[#64748B] nature">On-site • Full-time • $105,000 - $145,000</p>
+        <p class="mb-2 text-sm text-[#64748B] desc">Develop and optimize embedded software for high-performance hardware devices.</p>
+        <button class="btn btn-outline btn-success text-green-300 btn-interview">Interview</button>
+        <button class="btn btn-outline btn-secondary text-red-600 btn-rejected">Rejected</button>
+    </div>
+    <div><button class="cursor-pointer btn-delete"><i class="fa-solid fa-delete-left"></i></button></div>
+</div>
+
+       
             
             
         </div>
