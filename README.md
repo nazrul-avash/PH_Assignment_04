@@ -2,7 +2,6 @@
 Answer. 
 getElementById returns the only elements/node on the DOM tree if exists. It searches node based on css value of ID property.
 getElementsByClassName returns the list of nodes by that class name from the html page/DOM tree. The list is a array-like collection called by html collection.
-
 querySelector: It takes class name as parameter and returns the first matched node from the tree by searching with class name parameter.
 querySelectorAll: It returns all nodes/elements which have that class name sent in the method parameter.
 
@@ -24,5 +23,4 @@ Answer: Event Delegation means tracking larger area of the page with a single ev
 
 5. What is the difference between preventDefault() and stopPropagation() methods?
 Answer: preventDefault() methods stops browsers default/expected behavior. By adding this method inside event listener we can stop the pages normal activity.
-
 stopPropagation(): By this method, we can stop the traveling of the event bubble going upward. With this can stop the browser to only collect the target elements, no information of parents.
