@@ -158,6 +158,7 @@ mainContainer.addEventListener("click",function(event){
                 if (name === temp.innerText){
                     
                     temp.parentNode.parentNode.remove();
+                    calculateCount();
                 }
             }
         if (item.querySelector(".status")){
