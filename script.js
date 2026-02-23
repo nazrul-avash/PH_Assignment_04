@@ -150,12 +150,18 @@ mainContainer.addEventListener("click",function(event){
    
     } 
     else if(event.target.closest('.btn-delete')){
-        console.log("inside");
-        const parentNode = event.target.closest(".btn-delete").parentNode.parentNode;
-        const name = parentNode.querySelector(".company-name").innerText;
-        parentNode.remove();
-        if (parentNode.querySelector(".status")){
-            if (parentNode.querySelector(".status").innerText ==="Interview"){
+        
+        const item = event.target.closest(".btn-delete").parentNode.parentNode;
+        const name = item.querySelector(".company-name").innerText;
+        const companyNames = allCardSection.querySelectorAll(".company-name");
+         for (let temp of companyNames){
+                if (name === temp.innerText){
+                    
+                    temp.parentNode.parentNode.remove();
+                }
+            }
+        if (item.querySelector(".status")){
+            if (item.querySelector(".status").innerText ==="Interview"){
                 interviewList = interviewList.filter(job=>job.companyName !== name);
                 if (currentStatus ==="interview-filter-btn"){
                     renderInterviewList();
@@ -163,8 +169,8 @@ mainContainer.addEventListener("click",function(event){
         }
         calculateCount();
             }
-            else if (parentNode.querySelector(".status").innerText ==="Rejected"){
-                console.log("inside");
+            else if (item.querySelector(".status").innerText ==="Rejected"){
+                
                 rejectedList = rejectedList.filter(job=>job.companyName !== name);
                 if (currentStatus ==="rejected-filter-btn"){
                     renderRejectedList();
